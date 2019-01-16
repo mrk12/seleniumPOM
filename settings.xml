@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<pluginGroups>
+       <pluginGroup>org.mortbay.jetty</pluginGroup>
+	</pluginGroups>
+    <mirrors> 
+		<mirror> 
+			<id>nexus</id> 
+			<mirrorOf>*</mirrorOf> 
+			<url>http://cihcispappa232c.logon.ds.ge.com:8301/nexus/content/groups/public</url> 
+		</mirror> 
+	</mirrors>
+	<proxies>
+		<!-- This section is required only if their is some different proxy setting is required based on business need -->
+		<!--<proxy>
+			 <id>blah</id>
+			 <active>false</active>
+			 <protocol>http</protocol>
+			 <host>stmproxy.glb.comfin.ge.com</host>
+			 <port>80</port>
+			 <nonProxyHosts>localhost|3.24.140.18|3.55.123.220|*.ge.com</nonProxyHosts>
+		</proxy>-->
+	</proxies>  
+	<profiles>
+		<profile>
+			<id>myprofile</id>
+			<repositories>
+				<repository>
+				<id>nexus-public</id>
+				<name>public-mirror</name>
+				<url>http://cihcispappa232c.logon.ds.ge.com:8301/nexus/content/groups/public</url>
+				<layout>default</layout>
+				</repository>
+			</repositories>
+		</profile>   
+	</profiles>
+	<activeProfiles>
+		<activeProfile>myprofile</activeProfile>
+	</activeProfiles>
+</settings>
