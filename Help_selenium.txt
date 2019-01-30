@@ -1,2 +1,4 @@
 C:\Users\rmanchik\.m2
 update settings file in .m2 folder
+
+Otherthan attached jar pla download Selenium standlone server and sikulix jars
